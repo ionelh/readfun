@@ -17,6 +17,8 @@ export default function PracticeWord({ image, word, completeHandler }) {
   }, [word]);
 
   const handleLetterClick = (letter, mangledIndex) => {
+    console.log('!!! letter', letter);
+    console.log('!!! mangledIndex', mangledIndex);
     if (letter === wordArr[letterIndex]) {
       incrementWordIndex();
       addHiddenIndex(mangledIndex);
