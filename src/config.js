@@ -1,5 +1,9 @@
 const CONFIG = [
   // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Gravitrax', image: require('../assets/Gravitrax.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
   //   sentence: 'Apple is a fruit',
   //   words: [{ word: 'Apfel', image: require('../assets/apple.png'), }/*, { word: 'fruit', image: '', }*/],
   // },
@@ -237,7 +241,7 @@ const CONFIG = [
   // },
   // {
   //   sentence: 'Grapes are fruits',
-  //   words: [{ word: 'Globi', image: require('../assets/globi.jpeg'), }/*, { word: 'fruits', image: '', }*/],
+  //   words: [{ word: 'Globi', image: require('../assets/Globi.png'), }/*, { word: 'fruits', image: '', }*/],
   // },
   // {
   //   sentence: 'Grapes are fruits',
@@ -309,7 +313,7 @@ const CONFIG = [
   // },
   // {
   //   sentence: 'Grapes are fruits',
-  //   words: [{ word: 'Stern', image: require('../assets/stern.png'), }/*, { word: 'fruits', image: '', }*/],
+  //   words: [{ word: 'Stern', image: require('../assets/Stern.png'), }/*, { word: 'fruits', image: '', }*/],
   // },
   // {
   //   sentence: 'Grapes are fruits',
@@ -383,97 +387,345 @@ const CONFIG = [
   //   sentence: 'Grapes are fruits',
   //   words: [{ word: 'Birne', image: require('../assets/Birne.png'), }/*, { word: 'fruits', image: '', }*/],
   // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Helm', image: require('../assets/Helm.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Spinne', image: require('../assets/Spinne.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Panda', image: require('../assets/Panda.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Rampe', image: require('../assets/Rampe.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Delfin', image: require('../assets/Delfin.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Planet', image: require('../assets/Planet.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Geld', image: require('../assets/Geld.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Töff', image: require('../assets/Toeff.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Pommes', image: require('../assets/Pommes.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Karotte', image: require('../assets/Karotte.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Ninjago', image: require('../assets/Ninjago.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Taxi', image: require('../assets/Taxi.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Fussball', image: require('../assets/Fussball.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Backflip', image: require('../assets/Backflip.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Nuss', image: require('../assets/Nuss.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Zoo', image: require('../assets/Zoo.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Arzt', image: require('../assets/Arzt.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Ärztin', image: require('../assets/Aerztin.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Rennen', image: require('../assets/Rennen.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Keller', image: require('../assets/Keller.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Schwein', image: require('../assets/Schwein.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Star Wars', image: require('../assets/Star_Wars.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Krokodil', image: require('../assets/krokodil.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Schnecke', image: require('../assets/Schnecke.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Glurak', image: require('../assets/Glurak.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Mew Two', image: require('../assets/Mew_Two.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Miu', image: require('../assets/Miu.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
+  // {
+  //   sentence: 'Grapes are fruits',
+  //   words: [{ word: 'Turtok', image: require('../assets/Turtok.png'), }/*, { word: 'fruits', image: '', }*/],
+  // },
   {
     sentence: 'Grapes are fruits',
-    words: [{ word: 'Helm', image: require('../assets/Helm.png'), }/*, { word: 'fruits', image: '', }*/],
+    words: [{ word: 'Harry Potter', image: require('../assets/Harry_Potter.png'), }/*, { word: 'fruits', image: '', }*/],
   },
   {
     sentence: 'Grapes are fruits',
-    words: [{ word: 'Spinne', image: require('../assets/Spinne.png'), }/*, { word: 'fruits', image: '', }*/],
+    words: [{ word: 'Draco', image: require('../assets/Draco.png'), }/*, { word: 'fruits', image: '', }*/],
   },
   {
     sentence: 'Grapes are fruits',
-    words: [{ word: 'Panda', image: require('../assets/Panda.png'), }/*, { word: 'fruits', image: '', }*/],
+    words: [{ word: 'Peter', image: require('../assets/Peter.png'), }/*, { word: 'fruits', image: '', }*/],
   },
   {
     sentence: 'Grapes are fruits',
-    words: [{ word: 'Rampe', image: require('../assets/Rampe.png'), }/*, { word: 'fruits', image: '', }*/],
+    words: [{ word: 'Peter', image: require('../assets/Justus.png'), }/*, { word: 'fruits', image: '', }*/],
   },
   {
     sentence: 'Grapes are fruits',
-    words: [{ word: 'Delfin', image: require('../assets/Delfin.png'), }/*, { word: 'fruits', image: '', }*/],
+    words: [{ word: 'Bob', image: require('../assets/Justus.png'), }/*, { word: 'fruits', image: '', }*/],
+  },
+
+
+  /******************** CHOOSE OPTION ****************************/
+
+
+  // {
+  //   question: 'Wer ist der beste?',
+  //   imageAnswers: {
+  //     images: [require('../assets/messi.png'), require('../assets/haaland.png'), require('../assets/mbappe.png'), require('../assets/ronaldo.png')],
+  //     correct: [0],
+  //   },
+  // },
+  // {
+  //   question: 'Wer fliegt?',
+  //   imageAnswers: {
+  //     images: [require('../assets/bear.png'), require('../assets/tiger.png'), require('../assets/vogel.png'), require('../assets/krokodil.png')],
+  //     correct: [2],
+  //   },
+  // },
+  // {
+  //   question: 'Wer schwimmt besser?',
+  //   imageAnswers: {
+  //     images: [require('../assets/dog.png'), require('../assets/lion.png'), require('../assets/Igel.png'), require('../assets/shark.png')],
+  //     correct: [3],
+  //   },
+  // },
+  // {
+  //   question: 'Wer spielt Tennis?',
+  //   imageAnswers: {
+  //     images: [require('../assets/ronaldo.png'), require('../assets/federer.png'), require('../assets/messi.png'), require('../assets/mbappe.png')],
+  //     correct: [1],
+  //   },
+  // },
+  // {
+  //   question: 'Wer spielt Fussball?',
+  //   imageAnswers: {
+  //     images: [require('../assets/ronaldo.png'), require('../assets/federer.png'), require('../assets/messi.png'), require('../assets/mbappe.png')],
+  //     correct: [0,2,3],
+  //   },
+  // },
+  // {
+  //   question: 'Wer ist der Koch?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Arzt.png'), require('../assets/cop.png'), require('../assets/Koch.png'), require('../assets/Aerztin.png')],
+  //     correct: [2],
+  //   },
+  // },
+  // {
+  //   question: 'Wer ist der Arzt?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Arzt.png'), require('../assets/cop.png'), require('../assets/Koch.png'), require('../assets/Aerztin.png')],
+  //     correct: [0],
+  //   },
+  // },
+  // {
+  //   question: 'Wer ist der Polizist?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Arzt.png'), require('../assets/cop.png'), require('../assets/Koch.png'), require('../assets/Aerztin.png')],
+  //     correct: [1],
+  //   },
+  // },
+  // {
+  //   question: 'Wer ist die Ärztin?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Arzt.png'), require('../assets/cop.png'), require('../assets/Koch.png'), require('../assets/Aerztin.png')],
+  //     correct: [3],
+  //   },
+  // },
+  // {
+  //   question: 'Wer ist schneller?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Schnecke.png'), require('../assets/Toeff.png'), require('../assets/Panda.png'), require('../assets/Igel.png')],
+  //     correct: [1],
+  //   },
+  // },
+  // {
+  //   question: 'Wer ist langsamer?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Schnecke.png'), require('../assets/Toeff.png'), require('../assets/Panda.png'), require('../assets/Igel.png')],
+  //     correct: [0],
+  //   },
+  // },
+  // {
+  //   question: 'Welches ist süss?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Pommes.png'), require('../assets/cucumber.png'), require('../assets/bread.png'), require('../assets/apple.png')],
+  //     correct: [3],
+  //   },
+  // },
+  // {
+  //   question: 'Welches ist die Sonne?',
+  //   imageAnswers: {
+  //     images: [require('../assets/sun.png'), require('../assets/Planet.png'), require('../assets/moon.png'), require('../assets/Stern.png')],
+  //     correct: [0],
+  //   },
+  // },
+  // {
+  //   question: 'Welcher ist der Planet?',
+  //   imageAnswers: {
+  //     images: [require('../assets/sun.png'), require('../assets/Planet.png'), require('../assets/moon.png'), require('../assets/Stern.png')],
+  //     correct: [1],
+  //   },
+  // },
+  // {
+  //   question: 'Welches ist der Mond?',
+  //   imageAnswers: {
+  //     images: [require('../assets/sun.png'), require('../assets/Planet.png'), require('../assets/moon.png'), require('../assets/Stern.png')],
+  //     correct: [2],
+  //   },
+  // },
+  // {
+  //   question: 'Welcher ist der Stern?',
+  //   imageAnswers: {
+  //     images: [require('../assets/sun.png'), require('../assets/Planet.png'), require('../assets/moon.png'), require('../assets/Stern.png')],
+  //     correct: [3],
+  //   },
+  // },
+  // {
+  //   question: 'Wer gibt Milch?',
+  //   imageAnswers: {
+  //     images: [require('../assets/cat.png'), require('../assets/Kuh.png'), require('../assets/monkey.png'), require('../assets/dog.png')],
+  //     correct: [1],
+  //   },
+  // },
+  // {
+  //   question: 'Wer ist Pikachus Trainer?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Serena.png'), require('../assets/Leaf.png'), require('../assets/Red.png'), require('../assets/Ash.png')],
+  //     correct: [3],
+  //   },
+  // },
+  // {
+  //   question: 'Welches ist Globi?',
+  //   imageAnswers: {
+  //     images: [require('../assets/Globi.png'), require('../assets/pikachu.png'), require('../assets/mario.png'), require('../assets/sonic.png')],
+  //     correct: [0],
+  //   },
+  // },
+  // {
+  //   question: 'Welches ist Pikachu?',
+  //   imageAnswers: {
+  //     images: [require('../assets/mario.png'), require('../assets/sonic.png'), require('../assets/pikachu.png'), require('../assets/Globi.png')],
+  //     correct: [2],
+  //   },
+  // },
+  // {
+  //   question: 'Welcher ist Sonic?',
+  //   imageAnswers: {
+  //     images: [require('../assets/mario.png'), require('../assets/sonic.png'), require('../assets/Globi.png'), require('../assets/pikachu.png')],
+  //     correct: [1],
+  //   },
+  // },
+  // {
+  //   question: 'Welches ist Mario?',
+  //   imageAnswers: {
+  //     images: [require('../assets/sonic.png'), require('../assets/Globi.png'), require('../assets/pikachu.png'), require('../assets/mario.png')],
+  //     correct: [3],
+  //   },
+  // },
+  {
+    question: 'Welcher ist Harry Potter?',
+    imageAnswers: {
+      images: [require('../assets/Draco.png'), require('../assets/Harry_Potter.png')],
+      correct: [1],
+    },
   },
   {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Planet', image: require('../assets/Planet.png'), }/*, { word: 'fruits', image: '', }*/],
+    question: 'Welcher ist Draco?',
+    imageAnswers: {
+      images: [require('../assets/Draco.png'), require('../assets/Harry_Potter.png')],
+      correct: [0],
+    },
   },
   {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Geld', image: require('../assets/Geld.png'), }/*, { word: 'fruits', image: '', }*/],
+    question: 'Welcher ist Räuber Hotzenplotz?',
+    imageAnswers: {
+      images: [require('../assets/Harry_Potter.png'), require('../assets/Hotzenplotz.png')],
+      correct: [1],
+    },
   },
   {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Töff', image: require('../assets/Toeff.png'), }/*, { word: 'fruits', image: '', }*/],
+    question: 'Welcher ist Peter?',
+    imageAnswers: {
+      images: [require('../assets/Justus.png'), require('../assets/Peter.png'), require('../assets/Bob.png')],
+      correct: [1],
+    },
   },
   {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Pommes', image: require('../assets/Pommes.png'), }/*, { word: 'fruits', image: '', }*/],
+    question: 'Welcher ist Justus?',
+    imageAnswers: {
+      images: [require('../assets/Justus.png'), require('../assets/Bob.png'), require('../assets/Peter.png')],
+      correct: [0],
+    },
   },
   {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Karotte', image: require('../assets/Karotte.png'), }/*, { word: 'fruits', image: '', }*/],
+    question: 'Welcher ist Bob?',
+    imageAnswers: {
+      images: [require('../assets/Bob.png'), require('../assets/Peter.png'), require('../assets/Justus.png')],
+      correct: [0],
+    },
   },
   {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Ninjago', image: require('../assets/Ninjago.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Taxi', image: require('../assets/Taxi.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Fussball', image: require('../assets/Fussball.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Backflip', image: require('../assets/Backflip.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Nuss', image: require('../assets/Nuss.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Zoo', image: require('../assets/Zoo.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Arzt', image: require('../assets/Arzt.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Ärztin', image: require('../assets/Aerztin.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Rennen', image: require('../assets/Rennen.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Keller', image: require('../assets/Keller.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Schwein', image: require('../assets/Schwein.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Star Wars', image: require('../assets/Star_Wars.png'), }/*, { word: 'fruits', image: '', }*/],
-  },
-  {
-    sentence: 'Grapes are fruits',
-    words: [{ word: 'Gravitrax', image: require('../assets/Gravitrax.png'), }/*, { word: 'fruits', image: '', }*/],
+    question: 'Wer hat blonde Haare??',
+    imageAnswers: {
+      images: [require('../assets/Peter.png'), require('../assets/Bob.png'), require('../assets/Justus.png')],
+      correct: [1],
+    },
   },
 ];
 
