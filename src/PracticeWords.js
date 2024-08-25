@@ -27,14 +27,14 @@ export default function PracticeWords() {
 
   const word = useMemo(() => {
     if (crtConfigIndex === null) return;
-    if (!CONFIG[crtConfigIndex].words) return;
-    return CONFIG[crtConfigIndex].words[getRandom(0, CONFIG[crtConfigIndex].words.length)].word;
+    if (!CONFIG[crtConfigIndex].word) return;
+    return CONFIG[crtConfigIndex].word;
   }, [crtConfigIndex]);
 
   const image = useMemo(() => {
     if (crtConfigIndex === null) return;
-    if (!CONFIG[crtConfigIndex].words) return;
-    return CONFIG[crtConfigIndex].words[getRandom(0, CONFIG[crtConfigIndex].words.length)].image;
+    if (!CONFIG[crtConfigIndex].image) return;
+    return CONFIG[crtConfigIndex].image;
   }, [crtConfigIndex]);
 
   const imageAnswers = useMemo(() => {
@@ -59,17 +59,21 @@ export default function PracticeWords() {
     setCrtConfigIndex(newConfigIndexGetter());
   };
 
-  // return crtConfigIndex !== null ? (
-  //   <AnswerQuestion
-  //     word={word}
-  //     imageAnswers={imageAnswers}
-  //     question={question}
-  //     correctAnswerIndexes={correctAnswerIndexes}
-  //     handleNext={handleNext}
-  //   />
-  // ) : null;
+  console.log('crtConfigIndex', crtConfigIndex);
 
-  return crtConfigIndex !== null ? (
-    <PracticeWord word={word} image={image} completeHandler={handleNext} />
-  ) : null;
+  if (crtConfigIndex === null) {
+    return null;
+  } else if (CONFIG[crtConfigIndex].word) {
+    return <PracticeWord word={word} image={image} completeHandler={handleNext} />;
+  } else if (CONFIG[crtConfigIndex].question) {
+    return (
+      <AnswerQuestion
+        word={word}
+        imageAnswers={imageAnswers}
+        question={question}
+        correctAnswerIndexes={correctAnswerIndexes}
+        handleNext={handleNext}
+      />
+    );
+  }
 }

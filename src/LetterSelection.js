@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flexWrap: 'wrap',
     flexDirection: 'row',
-    backgroundColor: 'red',
     display: 'flex',
   },
 });
