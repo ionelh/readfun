@@ -59,12 +59,16 @@ export default function PracticeWords() {
     setCrtConfigIndex(newConfigIndexGetter());
   };
 
-  console.log('crtConfigIndex', crtConfigIndex);
-
   if (crtConfigIndex === null) {
     return null;
   } else if (CONFIG[crtConfigIndex].word) {
-    return <PracticeWord word={word} image={image} completeHandler={handleNext} />;
+    return (
+      <PracticeWord
+        word={word}
+        image={image}
+        completeHandler={handleNext}
+      />
+    );
   } else if (CONFIG[crtConfigIndex].question) {
     return (
       <AnswerQuestion

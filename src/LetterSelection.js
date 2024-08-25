@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: 'yellow',
     alignItems: 'center',
-    width: 54,
+    minWidth: 54,
     height: 54,
     padding: 0,
     borderWidth: 2,

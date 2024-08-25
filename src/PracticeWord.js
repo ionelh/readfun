@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import LetterSelection from './LetterSelection';
+import Placeholders from './Placeholders';
 
 export default function PracticeWord({ image, word, completeHandler }) {
   const [letterIndex, setLetterIndex] = useState(0);
@@ -34,11 +35,13 @@ export default function PracticeWord({ image, word, completeHandler }) {
   return (
     <View style={{...styles.container}}>
       <Image source={image} style={styles.image} />
-      <Text style={styles.placeholder}>
-        {wordArr.map((letter, i) => {
-          return (i < letterIndex ? letter : '_') + `${i === word.length - 1 ? '' : ' '}`;
-        })}
-      </Text>
+      <View style={{ marginBottom: 50, marginTop: 50 }}>
+        <Placeholders
+          word={word}
+          onLetterClick={handleLetterClick}
+          letterIndex={letterIndex}
+        />
+      </View>
       <LetterSelection
         word={word}
         onLetterClick={handleLetterClick}
