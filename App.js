@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import LetterSelection from './src/LetterSelection';
 import PracticeWords from './src/PracticeWords';
 
 export default function App() {

@@ -3,7 +3,6 @@ import ChooseImage from './ChooseImage';
 
 const AnswerQuestion = ({ imageAnswers, correctAnswerIndexes, question, handleNext }) => {
   const handleAnswer = (answerIndex) => {
-    console.log('!!! correctAnswerIndexes', correctAnswerIndexes, answerIndex);
     if (correctAnswerIndexes.includes(answerIndex)) handleNext();
   };
 

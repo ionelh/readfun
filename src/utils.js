@@ -6,9 +6,9 @@ export const getRandom = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
 };
 
-export const getMangledLetters = (word) => {
+export const getMangledElements = (src) => {
     const result = [];
-    let arr = word.split('');
+    let arr = [ ...src ];
     while (arr.length > 0) {
         let random = getRandom(0, arr.length);
         result.push(arr[random]);

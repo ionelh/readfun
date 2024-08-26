@@ -1,30 +1,30 @@
 import { useState, useMemo, useEffect } from 'react';
 import { StyleSheet, View, Image } from 'react-native';
-import LetterSelection from './LetterSelection';
+import SubstringSelection from './SubstringSelection';
 import Placeholders from './Placeholders';
 
-export default function PracticeWord({ image, word, completeHandler }) {
-  const [letterIndex, setLetterIndex] = useState(0);
+export default function PracticeWord({ image, word, completeHandler, substrings }) {
+  const [crtSubstringIndex, setCrtSubstringIndex] = useState(0);
+  const [crtLetterIndex, setCrtLetterIndex] = useState(0);
   const [hiddenIndices, setHiddenIndices] = useState({});
-  const wordArr = useMemo(() => {
-    return word.split('');
-  }, [word]);
-
-  const incrementWordIndex = () => setLetterIndex(letterIndex + 1);
 
   useEffect(() => {
-    setLetterIndex(0);
+    setCrtSubstringIndex(0);
+    setCrtLetterIndex(0);
     setHiddenIndices({});
   }, [word]);
 
-  const handleLetterClick = (letter, mangledIndex) => {
-    if (letter === wordArr[letterIndex]) {
-      incrementWordIndex();
-      addHiddenIndex(mangledIndex);
-    }
-
-    if (letterIndex === word.length - 1) {
+  useEffect(() => {
+    if (crtLetterIndex === word.length) {
       completeHandler();
+    }
+  }, [crtLetterIndex]);
+
+  const handleSubstringClick = (substring, mangledIndex) => {
+    if (substring === substrings[crtSubstringIndex]) {
+      setCrtSubstringIndex(crtSubstringIndex + 1);
+      setCrtLetterIndex(crtLetterIndex + substring.length);
+      addHiddenIndex(mangledIndex);
     }
   };
 
@@ -38,13 +38,12 @@ export default function PracticeWord({ image, word, completeHandler }) {
       <View style={{ marginBottom: 50, marginTop: 50 }}>
         <Placeholders
           word={word}
-          onLetterClick={handleLetterClick}
-          letterIndex={letterIndex}
+          letterIndex={crtLetterIndex}
         />
       </View>
-      <LetterSelection
-        word={word}
-        onLetterClick={handleLetterClick}
+      <SubstringSelection
+        word={substrings}
+        onSubstringClick={handleSubstringClick}
         hiddenIndices={hiddenIndices}
       />
     </View>

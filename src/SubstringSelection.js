@@ -1,7 +1,7 @@
 import { useMemo, useEffect, useRef } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Animated } from 'react-native';
-import { getMangledLetters } from './utils';
+import { getMangledElements } from './utils';
 
 const FadeInView = props => {
   const fadeAnim = useRef(new Animated.Value(0)).current; // Initial value for opacity: 0
@@ -25,24 +25,24 @@ const FadeInView = props => {
   );
 };
 
-export default function LetterSelection({ word, onLetterClick, hiddenIndices }) {
-  const mangledLetters = useMemo(() => getMangledLetters(word), [word]);
-  // const mangledLetters = useMemo(() => word.split(''), [word]);
+export default function SubstringSelection({ word, onSubstringClick, hiddenIndices }) {
+  const mangledSubstrings = useMemo(() => getMangledElements(word), [word]);
+  // const mangledSubstrings = useMemo(() => word.split(''), [word]);
 
   let pressHandler = () => {};
 
   return (
     <View style={styles.mangled}>
     {/*<FadeInView style={styles.mangled}>*/}
-      {mangledLetters.map((letter, i) => {
-        pressHandler = () => hiddenIndices[i] ? () => {} : onLetterClick(letter, i);
+      {mangledSubstrings.map((substring, i) => {
+        pressHandler = () => hiddenIndices[i] ? () => {} : onSubstringClick(substring, i);
         return (
-          <TouchableOpacity key={`${i}-${letter}-${word}`} onPress={pressHandler}>
+          <TouchableOpacity key={`${i}-${substring}-${word}`} onPress={pressHandler}>
             <View style={{
               ...styles.button,
               ...(hiddenIndices[i] ? styles.hidden : {}),
             }}>
-              <Text style={styles.buttonText}>{letter}</Text>
+              <Text style={styles.buttonText}>{substring}</Text>
             </View>
           </TouchableOpacity>
         );
@@ -66,6 +66,10 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: 'red',
     borderRadius: 8,
+    marginLeft: 3,
+    marginRight: 3,
+    paddingLeft: 5,
+    paddingRight: 5,
   },
 
   buttonText: {

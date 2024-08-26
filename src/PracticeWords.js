@@ -31,10 +31,21 @@ export default function PracticeWords() {
     return CONFIG[crtConfigIndex].word;
   }, [crtConfigIndex]);
 
+  const wordArr = useMemo(() => {
+    if (!word) return;
+    return word.split('');
+  }, [word]);
+
   const image = useMemo(() => {
     if (crtConfigIndex === null) return;
     if (!CONFIG[crtConfigIndex].image) return;
     return CONFIG[crtConfigIndex].image;
+  }, [crtConfigIndex]);
+
+  const syllables = useMemo(() => {
+    if (crtConfigIndex === null) return;
+    if (!CONFIG[crtConfigIndex].syllables) return;
+    return CONFIG[crtConfigIndex].syllables;
   }, [crtConfigIndex]);
 
   const imageAnswers = useMemo(() => {
@@ -64,6 +75,7 @@ export default function PracticeWords() {
   } else if (CONFIG[crtConfigIndex].word) {
     return (
       <PracticeWord
+        substrings={syllables || wordArr}
         word={word}
         image={image}
         completeHandler={handleNext}

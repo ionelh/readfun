@@ -2,7 +2,7 @@ import { useMemo, useEffect, useRef } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Placeholders({ word, onLetterClick, letterIndex }) {
+export default function Placeholders({ word, letterIndex }) {
   const letters = useMemo(() => word.split(''));
 
   const getScaleStyles = () => {
