@@ -23,7 +23,6 @@ const CONFIG = [
     // { word: 'Tür', image: require('../assets/door.png') },
     // { word: 'Tisch', image: require('../assets/table.png') },
     // { word: 'Pedale', image: require('../assets/Pedale.png'), syllables: ['Pe', 'da', 'le'] },
-    // { word: 'Brot', image: require('../assets/bread.png') },
     // { word: 'Teller', image: require('../assets/plate.png') },
     // { word: 'Wurst', image: require('../assets/sausage.png') },
     // { word: 'Pizza', image: require('../assets/pizza.png'), syllables: ['Pi', 'zza'] },
@@ -46,7 +45,6 @@ const CONFIG = [
     // { word: 'Bus', image: require('../assets/bus.png') },
     // { word: 'Mond', image: require('../assets/moon.png') },
     // { word: 'Kran', image: require('../assets/crane.png') },
-    // { word: 'Tomate', image: require('../assets/tomato.png'), syllables: ['To', 'ma', 'te'] },
     // { word: 'Polizei', image: require('../assets/cop.png') },
     // { word: 'Titanic', image: require('../assets/titanic.png'), syllables: ['Ti', 'ta', 'nic'] },
     // { word: 'Lego', image: require('../assets/lego.png') },
@@ -72,14 +70,12 @@ const CONFIG = [
     // { word: 'Garten', image: require('../assets/Garten.png') },
     // { word: 'Stern', image: require('../assets/Stern.png') },
     // { word: 'Stuhl', image: require('../assets/stuhl.png') },
-    // { word: 'Vogel', image: require('../assets/vogel.png') },
     // { word: 'Blume', image: require('../assets/blume.png') },
     // { word: 'Fabrik', image: require('../assets/Fabrik.png') },
     // { word: 'Bagger', image: require('../assets/Bagger.png') },
     // { word: 'Roboter', image: require('../assets/Roboter.png') },
     // { word: 'Dino', image: require('../assets/Dino.png') },
     // { word: 'Fuss', image: require('../assets/Fuss.png') },
-    // { word: 'Igel', image: require('../assets/Igel.png') },
     // { word: 'Kissen', image: require('../assets/Kissen.png') },
     // { word: 'Blatt', image: require('../assets/Blatt.png') },
     // { word: 'Pferd', image: require('../assets/Pferd.png') },
@@ -125,7 +121,6 @@ const CONFIG = [
     // { word: 'Murmli', image: require('../assets/Murmli.png') },
     // { word: 'Schatz', image: require('../assets/Schatz.png') },
     // { word: 'Flugzeug', image: require('../assets/Flugzeug.png'), syllables: ['Flug', 'zeug'] },
-    // { word: 'Rose', image: require('../assets/Rose.png'), syllables: ['Ro', 'se'] },
     // { word: 'Kartoffel', image: require('../assets/Kartoffel.png'), syllables: ['Kar', 'to', 'ffel'] },
     // { word: 'Finger', image: require('../assets/Finger.png'), syllables: ['Fin', 'ger'] },
     // { word: 'Helicopter', image: require('../assets/Helicopter.png'), syllables: ['He', 'li', 'cop', 'ter'] },
@@ -133,6 +128,7 @@ const CONFIG = [
 
 
     // School words
+    /******************************* A *********************************/
     { word: 'Alien', image: require('../assets/Alien.png'), syllables: ['Ali', 'en'] },
     {
       question: 'Alien',
@@ -209,19 +205,6 @@ const CONFIG = [
         correct: [3],
       },
     },
-    { word: 'Banane', image: require('../assets/Banane.png'), syllables: ['Ba', 'na', 'ne'] },
-    {
-      question: 'Banane',
-      imageAnswers: {
-        images: [
-          require('../assets/Apfel.png'),
-          require('../assets/Kartoffel.png'),
-          require('../assets/Banane.png'),
-          require('../assets/Mango.png'),
-        ],
-        correct: [2],
-      },
-    },
     { word: 'Ananas', image: require('../assets/Ananas.png'), syllables: ['Ana', 'nas'] },
     {
       question: 'Ananas',
@@ -235,19 +218,6 @@ const CONFIG = [
         correct: [2],
       },
     },
-    { word: 'Ente', image: require('../assets/Ente.png'), syllables: ['En', 'te'] },
-    {
-      question: 'Ente',
-      imageAnswers: {
-        images: [
-          require('../assets/Ente.png'),
-          require('../assets/Biene.png'),
-          require('../assets/Affe.png'),
-          require('../assets/Maus.png'),
-        ],
-        correct: [0],
-      },
-    },
     { word: 'Apfel', image: require('../assets/Apfel.png'), syllables: ['Ap', 'fel'] },
     {
       question: 'Apfel',
@@ -257,6 +227,64 @@ const CONFIG = [
           require('../assets/Banane.png'),
           require('../assets/Kartoffel.png'),
           require('../assets/Mango.png'),
+        ],
+        correct: [0],
+      },
+    },
+    /******************************* B *********************************/
+    { word: 'Brot', image: require('../assets/Brot.png') },
+    { word: 'Banane', image: require('../assets/Banane.png'), syllables: ['Ba', 'na', 'ne'] },
+    {
+      question: 'Banane',
+      imageAnswers: {
+        images: [
+          require('../assets/Apfel.png'),
+          require('../assets/Kartoffel.png'),
+          require('../assets/Banane.png'),
+          require('../assets/Mango.png'),
+        ],
+        correct: [2],
+      },
+    },
+    { word: 'Biene', image: require('../assets/Biene.png'), syllables: ['Bie', 'ne'] },
+    /******************************* B *********************************/
+    { word: 'Dossier', image: require('../assets/Dossier.png'), syllables: ['Dos', 'si', 'er']},
+    {
+      question: 'Dossier',
+      imageAnswers: {
+        images: [
+          require('../assets/Koffer.png'),
+          require('../assets/Mantel.png'),
+          require('../assets/Lampe.png'),
+          require('../assets/Dossier.png'),
+        ],
+        correct: [3],
+      },
+    },
+    /******************************* B *********************************/
+    { word: 'Camion', image: require('../assets/Camion.png'), syllables: ['Ca', 'mi', 'on']},
+    {
+      question: 'Camion',
+      imageAnswers: {
+        images: [
+          require('../assets/wheel.png'),
+          require('../assets/Toeff.png'),
+          require('../assets/Camion.png'),
+          require('../assets/car.png'),
+        ],
+        correct: [2],
+      },
+    },
+    /******************************* E *********************************/
+    { word: 'Ente', image: require('../assets/Ente.png'), syllables: ['En', 'te'] },
+    {
+      question: 'Ente',
+      imageAnswers: {
+        images: [
+          require('../assets/Ente.png'),
+          require('../assets/Biene.png'),
+          require('../assets/Affe.png'),
+          require('../assets/Maus.png'),
         ],
         correct: [0],
       },
@@ -274,6 +302,8 @@ const CONFIG = [
         correct: [1],
       },
     },
+    { word: 'Etui', image: require('../assets/Etui.png') },
+    /******************************* H *********************************/
     { word: 'Hase', image: require('../assets/Hase.png'), syllables: ['Ha', 'se'] },
     {
       question: 'Hase',
@@ -283,6 +313,48 @@ const CONFIG = [
           require('../assets/Biene.png'),
           require('../assets/Hase.png'),
           require('../assets/Esel.png'),
+        ],
+        correct: [2],
+      },
+    },
+    /******************************* I *********************************/
+    { word: 'Insel', image: require('../assets/Insel.png'), syllables: ['In', 'sel'] },
+    {
+      question: 'Insel',
+      imageAnswers: {
+        images: [
+          require('../assets/Mango.png'),
+          require('../assets/Insel.png'),
+          require('../assets/Kartoffel.png'),
+          require('../assets/Garten.png'),
+        ],
+        correct: [1],
+      },
+    },
+    { word: 'Igel', image: require('../assets/Igel.png') },
+    {
+      question: 'Igel',
+      imageAnswers: {
+        images: [
+          require('../assets/lion.png'),
+          require('../assets/Hase.png'),
+          require('../assets/Panda.png'),
+          require('../assets/Igel.png'),
+        ],
+        correct: [3],
+      },
+    },
+    /******************************* L *********************************/
+    { word: 'Labyrinth', image: require('../assets/Labyrinth.png'), syllables: ['La', 'by', 'rinth'] },
+    { word: 'Lupe', image: require('../assets/Lupe.png'), syllables: ['Lu', 'pe'] },
+    {
+      question: 'Lupe',
+      imageAnswers: {
+        images: [
+          require('../assets/fork.png'),
+          require('../assets/Ordner.png'),
+          require('../assets/Lupe.png'),
+          require('../assets/Lampe.png'),
         ],
         correct: [2],
       },
@@ -313,6 +385,21 @@ const CONFIG = [
         correct: [3],
       },
     },
+    { word: 'Koffer', image: require('../assets/Koffer.png'), syllables: ['Kof', 'fer'] },
+    /******************************* M *********************************/
+    { word: 'Mais', image: require('../assets/Mais.png') },
+    {
+      question: 'Mais',
+      imageAnswers: {
+        images: [
+          require('../assets/Salami.png'),
+          require('../assets/Mais.png'),
+          require('../assets/pizza.png'),
+          require('../assets/Mango.png'),
+        ],
+        correct: [1],
+      },
+    },
     { word: 'Maus', image: require('../assets/Maus.png') },
     {
       question: 'Maus',
@@ -326,6 +413,19 @@ const CONFIG = [
         correct: [3],
       },
     },
+    { word: 'Melone', image: require('../assets/Melone.png'), syllables: ['Me', 'lo', 'ne'] },
+    {
+      question: 'Melone',
+      imageAnswers: {
+        images: [
+          require('../assets/Mango.png'),
+          require('../assets/Apfel.png'),
+          require('../assets/Melone.png'),
+          require('../assets/Banane.png'),
+        ],
+        correct: [2],
+      },
+    },
     { word: 'Mango', image: require('../assets/Mango.png'), syllables: ['Man', 'go'] },
     {
       question: 'Mango',
@@ -333,7 +433,7 @@ const CONFIG = [
         images: [
           require('../assets/Mango.png'),
           require('../assets/Apfel.png'),
-          require('../assets/Kartoffel.png'),
+          require('../assets/Melone.png'),
           require('../assets/Banane.png'),
         ],
         correct: [0],
@@ -352,18 +452,74 @@ const CONFIG = [
         correct: [1],
       },
     },
-    { word: 'Biene', image: require('../assets/Biene.png'), syllables: ['Bie', 'ne'] },
-    { word: 'Insel', image: require('../assets/Insel.png'), syllables: ['In', 'sel'] },
+    /******************************* N *********************************/
+    { word: 'Nagel', image: require('../assets/Nagel.png'), syllables: ['Na', 'gel']},
     {
-      question: 'Insel',
+      question: 'Nagel',
       imageAnswers: {
         images: [
+          require('../assets/Nagel.png'),
+          require('../assets/plate.png'),
+          require('../assets/spoon.png'),
+          require('../assets/Stern.png'),
+        ],
+        correct: [0],
+      },
+    },
+    /******************************* O *********************************/
+    { word: 'Ofen', image: require('../assets/Ofen.png') },
+    { word: 'Ordner', image: require('../assets/Ordner.png'), syllables: ['Ord', 'ner'] },
+    /******************************* R *********************************/
+    { word: 'Rose', image: require('../assets/Rose.png'), syllables: ['Ro', 'se'] },
+    /******************************* S *********************************/
+    { word: 'Salat', image: require('../assets/Salat.png'), syllables: ['Sa', 'lat'] },
+    {
+      question: 'Salat',
+      imageAnswers: {
+        images: [
+          require('../assets/Salat.png'),
+          require('../assets/Salami.png'),
+          require('../assets/Pommes.png'),
+          require('../assets/Brot.png'),
+        ],
+        correct: [0],
+      },
+    },
+    { word: 'Sandalen', image: require('../assets/Sandalen.png'), syllables: ['San', 'da', 'len'] },
+    {
+      question: 'Sandalen',
+      imageAnswers: {
+        images: [
+          require('../assets/Sandalen.png'),
+          require('../assets/pants.png'),
+          require('../assets/Mantel.png'),
+          require('../assets/hat.png'),
+        ],
+        correct: [0],
+      },
+    },
+    { word: 'Salami', image: require('../assets/Salami.png'), syllables: ['Sa', 'la', 'mi'] },
+    {
+      question: 'Salami',
+      imageAnswers: {
+        images: [
+          require('../assets/pizza.png'),
+          require('../assets/Salami.png'),
           require('../assets/Mango.png'),
-          require('../assets/Insel.png'),
-          require('../assets/Kartoffel.png'),
-          require('../assets/Garten.png'),
+          require('../assets/Mais.png'),
         ],
         correct: [1],
+      },
+    },
+    /******************************* T *********************************/
+    { word: 'Tomate', image: require('../assets/tomato.png'), syllables: ['To', 'ma', 'te'] },
+    /******************************* V *********************************/
+    { word: 'Vogel', image: require('../assets/Vogel.png') },
+    {
+      question: 'Vogel',
+      imageAnswers: {
+        images: [require('../assets/bear.png'), require('../assets/tiger.png'), require('../assets/Vogel.png'), require('../assets/krokodil.png')],
+        correct: [2],
       },
     },
 
@@ -375,13 +531,6 @@ const CONFIG = [
   //   imageAnswers: {
   //     images: [require('../assets/messi.png'), require('../assets/haaland.png'), require('../assets/mbappe.png'), require('../assets/ronaldo.png')],
   //     correct: [0],
-  //   },
-  // },
-  // {
-  //   question: 'Wer fliegt?',
-  //   imageAnswers: {
-  //     images: [require('../assets/bear.png'), require('../assets/tiger.png'), require('../assets/vogel.png'), require('../assets/krokodil.png')],
-  //     correct: [2],
   //   },
   // },
   // {
@@ -436,7 +585,7 @@ const CONFIG = [
   // {
   //   question: 'Welches ist süss?',
   //   imageAnswers: {
-  //     images: [require('../assets/Pommes.png'), require('../assets/cucumber.png'), require('../assets/bread.png'), require('../assets/Apfel.png')],
+  //     images: [require('../assets/Pommes.png'), require('../assets/cucumber.png'), require('../assets/Brot.png'), require('../assets/Apfel.png')],
   //     correct: [3],
   //   },
   // },
