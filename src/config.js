@@ -473,6 +473,14 @@ const CONFIG = [
     { word: 'Rose', image: require('../assets/Rose.png'), syllables: ['Ro', 'se'] },
     /******************************* S *********************************/
     { word: 'Salat', image: require('../assets/Salat.png'), syllables: ['Sa', 'lat'] },
+    { word: 'Skelett', image: require('../assets/Skelett.png'), syllables: ['Ske', 'lett'] },
+    {
+      question: 'Skelett',
+      imageAnswers: {
+        images: [require('../assets/Zombie.png'), require('../assets/Vampir.png'), require('../assets/Vogel.png'), require('../assets/Skelett.png')],
+        correct: [3],
+      },
+    },
     {
       question: 'Salat',
       imageAnswers: {
@@ -520,6 +528,23 @@ const CONFIG = [
       imageAnswers: {
         images: [require('../assets/bear.png'), require('../assets/tiger.png'), require('../assets/Vogel.png'), require('../assets/krokodil.png')],
         correct: [2],
+      },
+    },
+    { word: 'Vampir', image: require('../assets/Vampir.png'), syllables: ['Vam', 'pir'] },
+    {
+      question: 'Vampir',
+      imageAnswers: {
+        images: [require('../assets/Vampir.png'), require('../assets/krokodil.png'), require('../assets/tiger.png'), require('../assets/Vogel.png')],
+        correct: [0],
+      },
+    },
+    /******************************* Z *********************************/
+    { word: 'Zombie', image: require('../assets/Zombie.png'), syllables: ['Zom', 'bie'] },
+    {
+      question: 'Zombie',
+      imageAnswers: {
+        images: [require('../assets/Vampir.png'), require('../assets/Zombie.png'), require('../assets/Vogel.png'), require('../assets/tiger.png')],
+        correct: [1],
       },
     },
 
