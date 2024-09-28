@@ -464,7 +464,7 @@ const CONFIG = [
           require('../assets/Roboter.png'),
           require('../assets/Muell.png'),
         ],
-        correct: [1],
+        correct: [3],
       },
     },
     { word: 'Müllwagen', image: require('../assets/Muellwagen.png'), syllables: ['Müll', 'wa', 'gen']},
@@ -477,7 +477,7 @@ const CONFIG = [
           require('../assets/car.png'),
           require('../assets/Muellwagen.png'),
         ],
-        correct: [1],
+        correct: [3],
       },
     },
     /******************************* N *********************************/
