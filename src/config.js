@@ -124,6 +124,8 @@ const CONFIG = [
     // { word: 'Kartoffel', image: require('../assets/Kartoffel.png'), syllables: ['Kar', 'to', 'ffel'] },
     // { word: 'Finger', image: require('../assets/Finger.png'), syllables: ['Fin', 'ger'] },
     // { word: 'Helicopter', image: require('../assets/Helicopter.png'), syllables: ['He', 'li', 'cop', 'ter'] },
+    { word: 'Iglu', image: require('../assets/Iglu.png'), syllables: ['Ig', 'lu'] },
+    { word: 'Zelt', image: require('../assets/Zelt.png') },
 
 
 
@@ -448,6 +450,32 @@ const CONFIG = [
           require('../assets/Mantel.png'),
           require('../assets/Kissen.png'),
           require('../assets/Socken.png'),
+        ],
+        correct: [1],
+      },
+    },
+    { word: 'Müll', image: require('../assets/Muell.png') },
+    {
+      question: 'Müll',
+      imageAnswers: {
+        images: [
+          require('../assets/Vase.png'),
+          require('../assets/Pommes.png'),
+          require('../assets/Roboter.png'),
+          require('../assets/Muell.png'),
+        ],
+        correct: [1],
+      },
+    },
+    { word: 'Müllwagen', image: require('../assets/Muellwagen.png'), syllables: ['Müll', 'wa', 'gen']},
+    {
+      question: 'Müllwagen',
+      imageAnswers: {
+        images: [
+          require('../assets/Helicopter.png'),
+          require('../assets/Toeff.png'),
+          require('../assets/car.png'),
+          require('../assets/Muellwagen.png'),
         ],
         correct: [1],
       },
