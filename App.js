@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import PracticeWords from './src/PracticeWords';
+import PracticeWords from './src/components/PracticeWords/PracticeWords';
 
 export default function App() {
   return (
